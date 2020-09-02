@@ -11,5 +11,5 @@ srcDir        = "src"
 # Dependencies
 
 requires "nim >= 1.2.6"
-requires "fidget >= 0.4.1"
+requires "fidget#head"
 requires "gradient#head"
