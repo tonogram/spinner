@@ -8,7 +8,7 @@
 
 Spinner is a companion library for the wonderful
 [Fidget](https://github.com/treeform/fidget) that makes creating beautiful UIs faster
-without sacrificing customizability or relying on ugly native components.
+without sacrificing customizability. Begone, ugly native components!
 
 Existing components include:
 - Toggle switches
