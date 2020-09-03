@@ -1,3 +1,6 @@
+## These are the custom types used by Spinner. Most are just enums for customization
+## options.
+
 type
   Orientation* = enum
     Horizontal, Vertical

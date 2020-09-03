@@ -3,7 +3,7 @@
 ## 
 ## [Documentation for Lite](lite.html)
 ## 
-## [Main Page](spinner.html)
+## [Main Page](../index.html)
 
 import fidget, gradient
 

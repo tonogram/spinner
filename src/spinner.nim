@@ -16,6 +16,8 @@
 ## startFidget(drawmain)
 ## ```
 ## 
+## -----
+## 
 ## Spinner comes in three flavors: Mean, Lean, and Lite. Mean is the aesthetics-first
 ## version of Spinner, implementing some animations to make your app look nice
 ## at a minor memory and performance cost. Lean's components are identical to
@@ -39,12 +41,13 @@
 ## If you start Fidget with [mainLoopMode](https://github.com/treeform/fidget/blob/master/src/fidget/openglbackend.nim#L371)
 ## at its default, only use Lean or Lite as animations will not work properly otherwise.
 ## 
+## -----
+## 
 ## Spinner's components also serve as a great reference for building your own.
 ## Please save yourself a headache and look at the Lean or Lite versions of the
 ## code, as they are much easier to understand.
 ## 
-## The default colors of Mean/Lean match Fidget's IceUI demo.
-## 
+## -----
 ## 
 ## To access data from any component, call it from the appropriate table.
 ## Slider example:
@@ -55,11 +58,13 @@
 ## what you want. Other than calling data, just about everything else is better
 ## placed in the submodule's respective documentation.
 ## 
-## [Documentation for Mean/Lean's Procedures](meanlean.html)
+## -----
 ## 
-## [Documentation for Lite's Procedures](lite.html)
+## [Documentation for Mean/Lean's Procedures](docs/meanlean.html)
 ## 
-## [Documentation for Types](types.html)
+## [Documentation for Lite's Procedures](docs/lite.html)
+## 
+## [Documentation for Types](docs/types.html)
 
 import spinner/mean
 export mean

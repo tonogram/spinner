@@ -2,9 +2,9 @@
 ## amount of performance and memory between the three flavors. Lite's procedures
 ## are *not* compatible with Mean or Lean's!
 ## 
-## [Documentation for Mean/Lean](mean.html)
+## [Documentation for Mean/Lean](meanlean.html)
 ## 
-## [Main Page](spinner.html)
+## [Main Page](../index.html)
 
 import fidget
 
