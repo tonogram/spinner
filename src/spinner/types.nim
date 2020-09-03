@@ -1,6 +1,7 @@
 type
   Orientation* = enum
     Horizontal, Vertical
+
   SliderRange* = 0.0..1.0
 
   SliderStyle* = enum

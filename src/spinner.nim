@@ -55,9 +55,11 @@
 ## what you want. Other than calling data, just about everything else is better
 ## placed in the submodule's respective documentation.
 ## 
-## [Documentation for Mean/Lean's Procedures](mean.html)
+## [Documentation for Mean/Lean's Procedures](meanlean.html)
 ## 
 ## [Documentation for Lite's Procedures](lite.html)
+## 
+## [Documentation for Types](types.html)
 
 import spinner/mean
 export mean

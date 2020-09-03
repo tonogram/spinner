@@ -64,7 +64,7 @@ proc createSlider*(
   ## 
   ## `initVal` - How far along the slider the handle will start at, from `0.0` to `1.0`.
   ## 
-  ## `color - The color of the slider.
+  ## `color` - The color of the slider.
   ## 
   ## `orientation` - The direction of the slider.
 

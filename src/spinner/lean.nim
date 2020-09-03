@@ -370,7 +370,7 @@ proc createProgress*(
   ## 
   ## `colors` - The colors of each part of the progress bar.
   ## 
-  ## `style` - The style of the checkbox, either `progressA` or `progressB`.
+  ## `style` - The style of the checkbox, `progressA`, `progressB`, or `progressC`.
   ## 
   ## `orientation` - The direction of the progress bar.
   group "progress":

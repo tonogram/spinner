@@ -4,7 +4,7 @@
 
 [![version](https://nimble.directory/ci/badges/spinner/version.svg)](https://nimble.directory/pkg/spinner)
 [![install test](https://nimble.directory/ci/badges/spinner/nimdevel/status.svg)](https://github.com/Knaque/spinner)
-[![doc build](https://nimble.directory/ci/badges/spinner/nimdevel/docstatus.svg)](https://nimble.directory/docs/spinner//spinner.html)
+[![doc build](https://nimble.directory/ci/badges/spinner/nimdevel/docstatus.svg)](https://knaque.dev/spinner)
 
 Spinner is a companion library for the wonderful
 [Fidget](https://github.com/treeform/fidget) that makes creating beautiful UIs faster
@@ -30,4 +30,4 @@ Check out the demo at `tests/demo.nim` to see how it looks.
 
 **Installation** - `nimble install spinner`
 
-**Usage** - [Read the docs!](https://nimble.directory/docs/spinner//spinner.html)
+**Usage** - [Read the docs!](https://knaque.dev/spinner)
