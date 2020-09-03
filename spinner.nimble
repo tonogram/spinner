@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.2"
+version       = "0.1.3"
 author        = "Reilly Moore"
 description   = "Prebuilt components for the Fidget GUI library."
 license       = "MIT"
