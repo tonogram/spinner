@@ -17,4 +17,4 @@ type
     checkboxA, checkboxB
 
   ProgressStyle* = enum
-    progressA, progressB
+    progressA, progressB, progressC

@@ -377,40 +377,33 @@ proc createProgress*(
     case orientation
     of Horizontal:
       box x, y, size, 18
-      # switch for style
-      case style
-      of progressA:
-        rectangle "left":
-          box 0, 0, val*size, 18
-          fill colors.left
-        rectangle "right":
-          box 0, 0, size, 18
-          fill colors.right
-      of progressB:
-        rectangle "left":
-          box 0, 0, val*size, 18
-          fill colors.left
-          cornerRadius 5
-        rectangle "right":
-          box 0, 0, size, 18
-          fill colors.right
-          cornerRadius 5
+      rectangle "left":
+        box 0, 0, val*size, 18
+        fill colors.left
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9
+      rectangle "right":
+        box 0, 0, size, 18
+        fill colors.right
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9
     of Vertical:
       box x, y, 18, size
-      case style
-      of progressA:
-        rectangle "left":
-          box 0, size-(val*size), 18, val*size
-          fill colors.left
-        rectangle "right":
-          box 0, 0, 18, size
-          fill colors.right
-      of progressB:
-        rectangle "left":
-          box 0, size-(val*size), 18, val*size
-          fill colors.left
-          cornerRadius 5
-        rectangle "right":
-          box 0, 0, 18, size
-          fill colors.right
-          cornerRadius 5
+      rectangle "left":
+        box 0, size-(val*size), 18, val*size
+        fill colors.left
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9
+      rectangle "right":
+        box 0, 0, 18, size
+        fill colors.right
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9

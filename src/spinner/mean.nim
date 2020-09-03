@@ -609,42 +609,36 @@ proc createProgress*(
     of Horizontal:
       box x, y, size, 18
       # switch for style
-      case style
-      of progressA:
-        rectangle "left":
-          box 0, 0, val*size, 18
-          fill ProgressImpl[id].left[ProgressImpl[id].t]
-        rectangle "right":
-          box 0, 0, size, 18
-          fill ProgressImpl[id].right[ProgressImpl[id].t]
-      of progressB:
-        rectangle "left":
-          box 0, 0, val*size, 18
-          fill ProgressImpl[id].left[ProgressImpl[id].t]
-          cornerRadius 5
-        rectangle "right":
-          box 0, 0, size, 18
-          fill ProgressImpl[id].right[ProgressImpl[id].t]
-          cornerRadius 5
+      rectangle "left":
+        box 0, 0, val*size, 18
+        fill ProgressImpl[id].left[ProgressImpl[id].t]
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9
+      rectangle "right":
+        box 0, 0, size, 18
+        fill ProgressImpl[id].right[ProgressImpl[id].t]
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9
     of Vertical:
       box x, y, 18, size
-      case style
-      of progressA:
-        rectangle "left":
-          box 0, size-(val*size), 18, val*size
-          fill ProgressImpl[id].left[ProgressImpl[id].t]
-        rectangle "right":
-          box 0, 0, 18, size
-          fill ProgressImpl[id].right[ProgressImpl[id].t]
-      of progressB:
-        rectangle "left":
-          box 0, size-(val*size), 18, val*size
-          fill ProgressImpl[id].left[ProgressImpl[id].t]
-          cornerRadius 5
-        rectangle "right":
-          box 0, 0, 18, size
-          fill ProgressImpl[id].right[ProgressImpl[id].t]
-          cornerRadius 5
+      rectangle "left":
+        box 0, size-(val*size), 18, val*size
+        fill ProgressImpl[id].left[ProgressImpl[id].t]
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9
+      rectangle "right":
+        box 0, 0, 18, size
+        fill ProgressImpl[id].right[ProgressImpl[id].t]
+        case style
+        of progressA: discard
+        of progressB: cornerRadius 5
+        of progressC: cornerRadius 9
 
     # logic for color transitions
     # check for changed colors
