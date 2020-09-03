@@ -60,11 +60,11 @@
 ## 
 ## -----
 ## 
-## [Documentation for Mean/Lean's Procedures](docs/meanlean.html)
+## [Documentation for Mean/Lean's Procedures](meanlean.html)
 ## 
-## [Documentation for Lite's Procedures](docs/lite.html)
+## [Documentation for Lite's Procedures](lite.html)
 ## 
-## [Documentation for Types](docs/types.html)
+## [Documentation for Types](types.html)
 
 import spinner/mean
 export mean

@@ -1,9 +1,5 @@
 ## Lean sacrifices animations in exchange for using a bit less memory and performance.
 ## The docs for Mean and Lean are practically identical.
-## 
-## [Documentation for Lite](lite.html)
-## 
-## [Main Page](../index.html)
 
 import fidget
 
@@ -51,8 +47,8 @@ proc createSlider*(
   id: string,
   x, y, size: float,
   initVal: SliderRange = 0.0,
-  idleColors: tuple[left, handle, right: string] = ("#70bdcf", "#70bdcf", "#e5f7fe"),
-  hoverColors: tuple[left, handle, right: string] = ("#9fe7f8", "#9fe7f8", "#e5f7fe"),
+  idleColors: tuple[left, handle, right: string] = ("#46607e", "#46607e", "#C1EEFA"),
+  hoverColors: tuple[left, handle, right: string] = ("#5A8EA6", "#5A8EA6", "#e5f7fe"),
   style: SliderStyle = sliderA, orientation: Orientation = Horizontal
 ) =
   ## Creates a slider.
@@ -158,8 +154,8 @@ proc createButton*(
   x, y, w, h: float,
   label: string,
   typeface: tuple[name: string, size, weight: float],
-  idleColors: tuple[fill, text: string] = ("#70bdcf", "#FFFFFF"),
-  hoverColors: tuple[fill, text: string] = ("#9fe7f8", "#FFFFFF"),
+  idleColors: tuple[fill, text: string] = ("#46607e", "#C1EEFA"),
+  hoverColors: tuple[fill, text: string] = ("#5A8EA6", "#e5f7fe"),
   style: ButtonStyle = buttonA,
   action: proc() = nil
 ) =
@@ -206,8 +202,8 @@ proc createToggle*(
   id: string,
   x, y: float,
   initVal = false,
-  idleColors: tuple[handle, right: string] = ("#70bdcf", "#e5f7fe"),
-  hoverColors: tuple[handle, right: string] = ("#9fe7f8", "#e5f7fe"),
+  idleColors: tuple[handle, right: string] = ("#46607e", "#C1EEFA"),
+  hoverColors: tuple[handle, right: string] = ("#5A8EA6", "#e5f7fe"),
   style: ToggleStyle = toggleA, orientation: Orientation = Horizontal
 ) =
   ## Creates a toggle switch.
@@ -271,8 +267,8 @@ proc createCheckbox*(
   id: string,
   x, y: float,
   initVal = false,
-  idleColors: tuple[off, on: string] = ("#e5f7fe", "#70bdcf"),
-  hoverColors: tuple[off, on: string] = ("#e5f7fe", "#9fe7f8"),
+  idleColors: tuple[on, off: string] = ("#46607e", "#C1EEFA"),
+  hoverColors: tuple[on, off: string] = ("#5A8EA6", "#e5f7fe"),
   style: CheckboxStyle = checkboxA
 ) =
   ## Creates a checkbox.
@@ -312,8 +308,8 @@ proc createRadio*(
   id, radioGroup: string,
   x, y: float,
   initVal = false,
-  idleColors: tuple[off, on: string] = ("#e5f7fe", "#70bdcf"),
-  hoverColors: tuple[off, on: string] = ("#e5f7fe", "#9fe7f8")
+  idleColors: tuple[on, off: string] = ("#46607e", "#C1EEFA"),
+  hoverColors: tuple[on, off: string] = ("#5A8EA6", "#e5f7fe")
 ) =
   ## Creates a radio button.
   ## 
@@ -355,7 +351,7 @@ proc createProgress*(
   id: string,
   x, y, size: float,
   val: SliderRange,
-  colors: tuple[left, right: string] = ("#70bdcf", "#e5f7fe"),
+  colors: tuple[left, right: string] = ("#46607e", "#C1EEFA"),
   style: ProgressStyle = progressA, orientation: Orientation = Horizontal
 ) =
   ## Creates a progress bar.

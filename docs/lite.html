@@ -136,10 +136,10 @@ function main() {
              orientation: Orientation = Horizontal)"><wbr />create<wbr />Toggle<span class="attachedType"></span></a></li>
   <li><a class="reference" href="#createCheckbox%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D"
     title="createCheckbox(id: string; x, y: float; initVal = false;
-               colors: tuple[off, on: string] = (&quot;#808080&quot;, &quot;#000000&quot;))"><wbr />create<wbr />Checkbox<span class="attachedType"></span></a></li>
+               colors: tuple[on, off: string] = (&quot;#000000&quot;, &quot;#808080&quot;))"><wbr />create<wbr />Checkbox<span class="attachedType"></span></a></li>
   <li><a class="reference" href="#createRadio%2Cstring%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D"
     title="createRadio(id, radioGroup: string; x, y: float; initVal = false;
-            colors: tuple[off, on: string] = (&quot;#808080&quot;, &quot;#000000&quot;))"><wbr />create<wbr />Radio<span class="attachedType"></span></a></li>
+            colors: tuple[on, off: string] = (&quot;#000000&quot;, &quot;#808080&quot;))"><wbr />create<wbr />Radio<span class="attachedType"></span></a></li>
   <li><a class="reference" href="#createProgress%2Cstring%2Cfloat%2Cfloat%2Cfloat%2CSliderRange%2Ctuple%5Bstring%2Cstring%5D%2COrientation"
     title="createProgress(id: string; x, y, size: float; val: SliderRange;
                colors: tuple[left, right: string] = (&quot;#000000&quot;, &quot;#808080&quot;);
@@ -154,10 +154,7 @@ function main() {
   <div class="nine columns" id="content">
   <div id="tocRoot"></div>
   
-  <p class="module-desc"><p>Lite sacrifices most customization options in exchange for using the least amount of performance and memory between the three flavors. Lite's procedures are <em>not</em> compatible with Mean or Lean's!</p>
-<p><a class="reference external" href="meanlean.html">Documentation for Mean/Lean</a></p>
-<p><a class="reference external" href="../index.html">Main Page</a></p>
-</p>
+  <p class="module-desc">Lite sacrifices most customization options in exchange for using the least amount of performance and memory between the three flavors. Lite's procedures are <em>not</em> compatible with Mean or Lean's!</p>
   <div class="section" id="6">
 <h1><a class="toc-backref" href="#6">Imports</a></h1>
 <dl class="item">
@@ -269,7 +266,7 @@ function main() {
 </dd>
 <a id="createCheckbox,string,float,float,tuple[string,string]"></a>
 <dt><pre><span class="Keyword">proc</span> <a href="#createCheckbox%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D"><span class="Identifier">createCheckbox</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">initVal</span> <span class="Other">=</span> <span class="Identifier">false</span><span class="Other">;</span>
-                   <span class="Identifier">colors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">off</span><span class="Other">,</span> <span class="Identifier">on</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#808080&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#000000&quot;</span><span class="Other">)</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+                   <span class="Identifier">colors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">on</span><span class="Other">,</span> <span class="Identifier">off</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#000000&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#808080&quot;</span><span class="Other">)</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
     <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">,</span> <span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
@@ -283,7 +280,7 @@ function main() {
 </dd>
 <a id="createRadio,string,string,float,float,tuple[string,string]"></a>
 <dt><pre><span class="Keyword">proc</span> <a href="#createRadio%2Cstring%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D"><span class="Identifier">createRadio</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">,</span> <span class="Identifier">radioGroup</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">initVal</span> <span class="Other">=</span> <span class="Identifier">false</span><span class="Other">;</span>
-                <span class="Identifier">colors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">off</span><span class="Other">,</span> <span class="Identifier">on</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#808080&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#000000&quot;</span><span class="Other">)</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+                <span class="Identifier">colors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">on</span><span class="Other">,</span> <span class="Identifier">off</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#000000&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#808080&quot;</span><span class="Other">)</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
     <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">KeyError</span><span class="Other">,</span> <span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">ValueError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
 <dd>
 
@@ -322,7 +319,7 @@ function main() {
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2020-09-03 13:58:51 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2020-09-03 15:24:27 UTC</small>
       </div>
     </div>
   </div>

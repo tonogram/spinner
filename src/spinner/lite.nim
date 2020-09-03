@@ -1,10 +1,6 @@
 ## Lite sacrifices most customization options in exchange for using the least
 ## amount of performance and memory between the three flavors. Lite's procedures
 ## are *not* compatible with Mean or Lean's!
-## 
-## [Documentation for Mean/Lean](meanlean.html)
-## 
-## [Main Page](../index.html)
 
 import fidget
 
@@ -209,7 +205,7 @@ proc createCheckbox*(
   id: string,
   x, y: float,
   initVal = false,
-  colors: tuple[off, on: string] = ("#808080", "#000000"),
+  colors: tuple[on, off: string] = ("#000000", "#808080"),
 ) =
   ## Creates a checkbox.
   ## 
@@ -240,7 +236,7 @@ proc createRadio*(
   id, radioGroup: string,
   x, y: float,
   initVal = false,
-  colors: tuple[off, on: string] = ("#808080", "#000000"),
+  colors: tuple[on, off: string] = ("#000000", "#808080"),
 ) =
   ## Creates a radio button.
   ## 
