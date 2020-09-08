@@ -33,7 +33,7 @@ proc drawMain() =
     createProgress("load_amnt", 0, 0, 144, prog, colors=(i.a, i.b), orientation=Vertical)
     createSlider("some_value", 36, 0, 108, 0.5, idleColors=(i.a, i.a, i.b), hoverColors=(h.a, h.a, h.b))
     createButton("perform_action", 36, 36, 108, 36, "change colors", ("Roboto", 12.0, 400.0), idleColors=(i.a, i.b), hoverColors=(h.a, h.b), action=changeColors)
-    createToggle("change_setting", 36, 90, idleColors=(i.a, i.b), hoverColors=(h.a, h.b))
+    createToggle("change_setting", 36, 90, idleColors=(i.a, i.a, i.b), hoverColors=(h.a, h.a, h.b))
     createCheckbox("choose_something", 90, 90, idleColors=(i.a, i.b), hoverColors=(h.a, h.b))
     createCheckbox("choose_something_else", 126, 90, idleColors=(i.a, i.b), hoverColors=(h.a, h.b))
     createRadio("option1", "group1", 45, 126, idleColors=(i.a, i.b), hoverColors=(h.a, h.b))

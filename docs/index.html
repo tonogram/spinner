@@ -104,6 +104,60 @@ function main() {
   </ul>
 </li>
 <li>
+  <a class="reference reference-toplevel" href="#8" id="58">Vars</a>
+  <ul class="simple simple-toc-section">
+      <li><a class="reference" href="#AnimationLength"
+    title="AnimationLength = int(60 / 10)"><wbr />Animation<wbr />Length<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#Slider"
+    title="Slider = initTable(64)"><wbr />Slider<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#Button"
+    title="Button = initTable(64)"><wbr />Button<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#Toggle"
+    title="Toggle = initTable(64)"><wbr />Toggle<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#Checkbox"
+    title="Checkbox = initTable(64)"><wbr />Checkbox<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#Radio"
+    title="Radio = initTable(64)"><wbr />Radio<span class="attachedType"></span></a></li>
+
+  </ul>
+</li>
+<li>
+  <a class="reference reference-toplevel" href="#12" id="62">Procs</a>
+  <ul class="simple simple-toc-section">
+      <li><a class="reference" href="#createSlider%2Cstring%2Cfloat%2Cfloat%2Cfloat%2CSliderRange%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2CSliderStyle%2COrientation"
+    title="createSlider(id: string; x, y, size: float; initVal: SliderRange = 0.0; idleColors: tuple[
+    left, handle, right: string] = (&quot;#46607e&quot;, &quot;#46607e&quot;, &quot;#C1EEFA&quot;); hoverColors: tuple[
+    left, handle, right: string] = (&quot;#5A8EA6&quot;, &quot;#5A8EA6&quot;, &quot;#e5f7fe&quot;);
+             style: SliderStyle = sliderA; orientation: Orientation = Horizontal)"><wbr />create<wbr />Slider<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#createButton%2Cstring%2Cfloat%2Cfloat%2Cfloat%2Cfloat%2Cstring%2Ctuple%5Bstring%2Cfloat%2Cfloat%5D%2Ctuple%5Bstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%5D%2CButtonStyle%2Cproc%29"
+    title="createButton(id: string; x, y, w, h: float; label: string;
+             typeface: tuple[name: string, size, weight: float];
+             idleColors: tuple[fill, text: string] = (&quot;#46607e&quot;, &quot;#C1EEFA&quot;);
+             hoverColors: tuple[fill, text: string] = (&quot;#5A8EA6&quot;, &quot;#e5f7fe&quot;);
+             style: ButtonStyle = buttonA; action: proc () = nil)"><wbr />create<wbr />Button<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#createToggle%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2CToggleStyle%2COrientation"
+    title="createToggle(id: string; x, y: float; initVal = false; idleColors: tuple[
+    left, handle, right: string] = (&quot;#46607e&quot;, &quot;#46607e&quot;, &quot;#C1EEFA&quot;); hoverColors: tuple[
+    left, handle, right: string] = (&quot;#5A8EA6&quot;, &quot;#5A8EA6&quot;, &quot;#e5f7fe&quot;);
+             style: ToggleStyle = toggleA; orientation: Orientation = Horizontal)"><wbr />create<wbr />Toggle<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#createCheckbox%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%5D%2CCheckboxStyle"
+    title="createCheckbox(id: string; x, y: float; initVal = false;
+               idleColors: tuple[on, off: string] = (&quot;#46607e&quot;, &quot;#C1EEFA&quot;);
+               hoverColors: tuple[on, off: string] = (&quot;#5A8EA6&quot;, &quot;#e5f7fe&quot;);
+               style: CheckboxStyle = checkboxA)"><wbr />create<wbr />Checkbox<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#createRadio%2Cstring%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%5D"
+    title="createRadio(id, radioGroup: string; x, y: float; initVal = false;
+            idleColors: tuple[on, off: string] = (&quot;#46607e&quot;, &quot;#C1EEFA&quot;);
+            hoverColors: tuple[on, off: string] = (&quot;#5A8EA6&quot;, &quot;#e5f7fe&quot;))"><wbr />create<wbr />Radio<span class="attachedType"></span></a></li>
+  <li><a class="reference" href="#createProgress%2Cstring%2Cfloat%2Cfloat%2Cfloat%2CSliderRange%2Ctuple%5Bstring%2Cstring%5D%2CProgressStyle%2COrientation"
+    title="createProgress(id: string; x, y, size: float; val: SliderRange;
+               colors: tuple[left, right: string] = (&quot;#46607e&quot;, &quot;#C1EEFA&quot;);
+               style: ProgressStyle = progressA;
+               orientation: Orientation = Horizontal)"><wbr />create<wbr />Progress<span class="attachedType"></span></a></li>
+
+  </ul>
+</li>
+<li>
   <a class="reference reference-toplevel" href="#19" id="69">Exports</a>
   <ul class="simple simple-toc-section">
     
@@ -116,8 +170,9 @@ function main() {
   <div class="nine columns" id="content">
   <div id="tocRoot"></div>
   
-  <p class="module-desc"><p>Spinner is a companion library for Fidget that provides a handful of useful components for speeding up app development.</p>
-<p><pre class="listing"><span class="Keyword">import</span> <span class="Identifier">fidget</span><span class="Punctuation">,</span> <span class="Identifier">spinner</span><span class="Operator">/</span><span class="Identifier">lean</span>
+  <p class="module-desc"><p>Spinner is an aesthetics-first companion library that aims to speed up the creation of beautiful, functional UIs in Fidget.</p>
+<p><pre class="listing"><span class="Keyword">import</span> <span class="Identifier">fidget</span><span class="Punctuation">,</span> <span class="Identifier">spinner</span>
+<span class="Keyword">import</span> <span class="Identifier">fidget</span><span class="Operator">/</span><span class="Identifier">opengl</span><span class="Operator">/</span><span class="Identifier">base</span> <span class="Comment"># required for RepaintOnFrame</span>
 
 <span class="Keyword">proc</span> <span class="Identifier">drawMain</span><span class="Punctuation">(</span><span class="Punctuation">)</span> <span class="Operator">=</span>
   <span class="Identifier">createProgress</span><span class="Punctuation">(</span><span class="StringLit">&quot;load_amnt&quot;</span><span class="Punctuation">,</span> <span class="DecNumber">0</span><span class="Punctuation">,</span> <span class="DecNumber">0</span><span class="Punctuation">,</span> <span class="DecNumber">200</span><span class="Punctuation">,</span> <span class="FloatNumber">0.5</span><span class="Punctuation">,</span> <span class="Identifier">orientation</span><span class="Operator">=</span><span class="Identifier">Vertical</span><span class="Punctuation">)</span>
@@ -128,40 +183,194 @@ function main() {
   <span class="Identifier">createRadio</span><span class="Punctuation">(</span><span class="StringLit">&quot;option1&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;group1&quot;</span><span class="Punctuation">,</span> <span class="DecNumber">36</span><span class="Punctuation">,</span> <span class="DecNumber">126</span><span class="Punctuation">)</span>
   <span class="Identifier">createRadio</span><span class="Punctuation">(</span><span class="StringLit">&quot;option2&quot;</span><span class="Punctuation">,</span> <span class="StringLit">&quot;group1&quot;</span><span class="Punctuation">,</span> <span class="DecNumber">72</span><span class="Punctuation">,</span> <span class="DecNumber">126</span><span class="Punctuation">)</span>
 
-<span class="Identifier">startFidget</span><span class="Punctuation">(</span><span class="Identifier">drawmain</span><span class="Punctuation">)</span>
+<span class="Identifier">startFidget</span><span class="Punctuation">(</span><span class="Identifier">drawmain</span><span class="Punctuation">,</span> <span class="Identifier">mainLoopMode</span><span class="Operator">=</span><span class="Identifier">RepaintOnFrame</span><span class="Punctuation">)</span>
 </pre></p>
+<p><strong>NOTE:</strong> In order for Spinner's animations to function properly, you <em>must</em> set <tt class="docutils literal"><span class="pre">mainLoopMode</span></tt> to <tt class="docutils literal"><span class="pre">RepaintOnFrame</span></tt>. <tt class="docutils literal"><span class="pre">RepaintSplitUpdate</span></tt> is not supported and may or may not work, but you can fix it yourself if it doesn't.</p>
 <hr />
-<p>Spinner comes in three flavors: Mean, Lean, and Lite. Mean is the aesthetics-first version of Spinner, implementing some animations to make your app look nice at a minor memory and performance cost. Lean's components are identical to Mean's, but skip on the animations. Lite is even more lightweight than Lean, but is very limited in customization.</p>
-<p>Lean and Mean can seamlessly be swapped out with one another; just change the import path. Lite cannot be swapped without changes.</p>
-<p><pre class="listing"><span class="Keyword">import</span> <span class="Identifier">fidget</span> <span class="Comment"># You'll still need Fidget too.</span>
-
-<span class="Comment"># Pick one:</span>
-<span class="Keyword">import</span> <span class="Identifier">spinner</span><span class="Operator">/</span><span class="Identifier">mean</span>
-<span class="Keyword">import</span> <span class="Identifier">spinner</span><span class="Operator">/</span><span class="Identifier">lean</span> <span class="Comment"># Mean code == Lean code, just change the import.</span>
-<span class="Keyword">import</span> <span class="Identifier">spinner</span><span class="Operator">/</span><span class="Identifier">lite</span> <span class="Comment"># Requires changes.</span>
-
-<span class="Keyword">import</span> <span class="Identifier">spinner</span> <span class="Comment"># Defaults to Mean.</span>
+<p>All of the data for components is stored in convenient tables, making access as simple as: <pre class="listing"><span class="Identifier">createSlider</span><span class="Punctuation">(</span><span class="StringLit">&quot;Example Slider&quot;</span><span class="Punctuation">,</span> <span class="DecNumber">36</span><span class="Punctuation">,</span> <span class="DecNumber">0</span><span class="Punctuation">,</span> <span class="DecNumber">100</span><span class="Punctuation">,</span> <span class="FloatNumber">0.5</span><span class="Punctuation">)</span>
+<span class="Identifier">echo</span> <span class="Identifier">Slider</span><span class="Punctuation">[</span><span class="StringLit">&quot;Example Slider&quot;</span><span class="Punctuation">]</span><span class="Operator">.</span><span class="Identifier">val</span>
 </pre></p>
-<p>If you start Fidget with <a class="reference external" href="https://github.com/treeform/fidget/blob/master/src/fidget/openglbackend.nim#L371">mainLoopMode</a> at its default, only use Lean or Lite as animations will not work properly otherwise.</p>
-<hr />
-<p>Spinner's components also serve as a great reference for building your own. Please save yourself a headache and look at the Lean or Lite versions of the code, as they are much easier to understand.</p>
-<hr />
-<p>To access data from any component, call it from the appropriate table. Slider example: <pre class="listing"><span class="Identifier">echo</span> <span class="Identifier">Slider</span><span class="Punctuation">[</span><span class="StringLit">&quot;some ID&quot;</span><span class="Punctuation">]</span><span class="Operator">.</span><span class="Identifier">val</span>
-</pre> Different components hold different data, but generally <tt class="docutils literal"><span class="pre">.val</span></tt> will give you what you want. Other than calling data, just about everything else is better placed in the submodule's respective documentation.</p>
-<hr />
-<p><a class="reference external" href="meanlean.html">Documentation for Mean/Lean's Procedures</a></p>
-<p><a class="reference external" href="lite.html">Documentation for Lite's Procedures</a></p>
-<p><a class="reference external" href="types.html">Documentation for Types</a></p>
+<p>Everything else you need to know should be on the rest of this page. Happy fidgeting!</p>
 </p>
   <div class="section" id="6">
 <h1><a class="toc-backref" href="#6">Imports</a></h1>
 <dl class="item">
-<a class="reference external" href="mean.html">mean</a>
+<a class="reference external" href="types.html">types</a>
+</dl></div>
+<div class="section" id="8">
+<h1><a class="toc-backref" href="#8">Vars</a></h1>
+<dl class="item">
+<a id="AnimationLength"></a>
+<dt><pre><a href="spinner.html#AnimationLength"><span class="Identifier">AnimationLength</span></a> <span class="Other">=</span> <span class="Identifier">int</span><span class="Other">(</span><span class="DecNumber">60</span> <span class="Operator">/</span> <span class="DecNumber">10</span><span class="Other">)</span></pre></dt>
+<dd>
+
+<p>How long the animations should last, in frames. Exclusive to Mean.</p>
+<p>In the future, should get the display's refresh rate for the calculation.</p>
+
+
+</dd>
+<a id="Slider"></a>
+<dt><pre><a href="spinner.html#Slider"><span class="Identifier">Slider</span></a> <span class="Other">=</span> <span class="Identifier">initTable</span><span class="Other">(</span><span class="DecNumber">64</span><span class="Other">)</span></pre></dt>
+<dd>
+
+<p>Public data for sliders.</p>
+<p>The only data you probably care about is <tt class="docutils literal"><span class="pre">val</span></tt>, which ranges from <tt class="docutils literal"><span class="pre">0.0</span></tt> to <tt class="docutils literal"><span class="pre">1.0</span></tt>. Just do some math to get the range you want.</p>
+
+
+</dd>
+<a id="Button"></a>
+<dt><pre><a href="spinner.html#Button"><span class="Identifier">Button</span></a> <span class="Other">=</span> <span class="Identifier">initTable</span><span class="Other">(</span><span class="DecNumber">64</span><span class="Other">)</span></pre></dt>
+<dd>
+
+<p>Public data for buttons.</p>
+<p>You probably won't need this.</p>
+
+
+</dd>
+<a id="Toggle"></a>
+<dt><pre><a href="spinner.html#Toggle"><span class="Identifier">Toggle</span></a> <span class="Other">=</span> <span class="Identifier">initTable</span><span class="Other">(</span><span class="DecNumber">64</span><span class="Other">)</span></pre></dt>
+<dd>
+
+<p>Public data for toggle switches.</p>
+<p>The only data you probably care about is <tt class="docutils literal"><span class="pre">val</span></tt>, which is either <tt class="docutils literal"><span class="pre">true</span></tt> or <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
+
+
+</dd>
+<a id="Checkbox"></a>
+<dt><pre><a href="spinner.html#Checkbox"><span class="Identifier">Checkbox</span></a> <span class="Other">=</span> <span class="Identifier">initTable</span><span class="Other">(</span><span class="DecNumber">64</span><span class="Other">)</span></pre></dt>
+<dd>
+
+<p>Public data for checkboxes.</p>
+<p>The only data you probably care about is <tt class="docutils literal"><span class="pre">val</span></tt>, which is either <tt class="docutils literal"><span class="pre">true</span></tt> or <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
+
+
+</dd>
+<a id="Radio"></a>
+<dt><pre><a href="spinner.html#Radio"><span class="Identifier">Radio</span></a> <span class="Other">=</span> <span class="Identifier">initTable</span><span class="Other">(</span><span class="DecNumber">64</span><span class="Other">)</span></pre></dt>
+<dd>
+
+<p>Public data for radio buttons.</p>
+<p>The only data you probably care about is <tt class="docutils literal"><span class="pre">val</span></tt>, which is either <tt class="docutils literal"><span class="pre">true</span></tt> or <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
+
+
+</dd>
+
+</dl></div>
+<div class="section" id="12">
+<h1><a class="toc-backref" href="#12">Procs</a></h1>
+<dl class="item">
+<a id="createSlider,string,float,float,float,SliderRange,tuple[string,string,string],tuple[string,string,string],SliderStyle,Orientation"></a>
+<dt><pre><span class="Keyword">proc</span> <a href="#createSlider%2Cstring%2Cfloat%2Cfloat%2Cfloat%2CSliderRange%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2CSliderStyle%2COrientation"><span class="Identifier">createSlider</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">,</span> <span class="Identifier">size</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">initVal</span><span class="Other">:</span> <a href="types.html#SliderRange"><span class="Identifier">SliderRange</span></a> <span class="Other">=</span> <span class="FloatNumber">0.0</span><span class="Other">;</span> <span class="Identifier">idleColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span>
+    <span class="Identifier">left</span><span class="Other">,</span> <span class="Identifier">handle</span><span class="Other">,</span> <span class="Identifier">right</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#C1EEFA&quot;</span><span class="Other">)</span><span class="Other">;</span> <span class="Identifier">hoverColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span>
+    <span class="Identifier">left</span><span class="Other">,</span> <span class="Identifier">handle</span><span class="Other">,</span> <span class="Identifier">right</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#5A8EA6&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#5A8EA6&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#e5f7fe&quot;</span><span class="Other">)</span><span class="Other">;</span>
+                 <span class="Identifier">style</span><span class="Other">:</span> <a href="types.html#SliderStyle"><span class="Identifier">SliderStyle</span></a> <span class="Other">=</span> <span class="Identifier">sliderA</span><span class="Other">;</span> <span class="Identifier">orientation</span><span class="Other">:</span> <a href="types.html#Orientation"><span class="Identifier">Orientation</span></a> <span class="Other">=</span> <span class="Identifier">Horizontal</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+<p>Creates a slider.</p>
+<p><tt class="docutils literal"><span class="pre">id</span></tt> - The ID of the slider, used to access its data. Must be unique.</p>
+<p><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> - The X and Y coordinates the slider will be placed at.</p>
+<p><tt class="docutils literal"><span class="pre">size</span></tt> - Either the width or height of the slider, depending on <tt class="docutils literal"><span class="pre">orientation</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">initVal</span></tt> - How far along the slider the handle will start at, from <tt class="docutils literal"><span class="pre">0.0</span></tt> to <tt class="docutils literal"><span class="pre">1.0</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">idleColors</span></tt>, <tt class="docutils literal"><span class="pre">hoverColors</span></tt> - The colors of each part of the slider. When <tt class="docutils literal"><span class="pre">orientation</span></tt> is <tt class="docutils literal"><span class="pre">Vertical</span></tt>, <tt class="docutils literal"><span class="pre">left</span></tt> and <tt class="docutils literal"><span class="pre">right</span></tt> become the bottom and top respectively.</p>
+<p><tt class="docutils literal"><span class="pre">style</span></tt> - The style of the slider, either <tt class="docutils literal"><span class="pre">sliderA</span></tt> or <tt class="docutils literal"><span class="pre">sliderB</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">orientation</span></tt> - The direction of the slider.</p>
+
+
+</dd>
+<a id="createButton,string,float,float,float,float,string,tuple[string,float,float],tuple[string,string],tuple[string,string],ButtonStyle,proc)"></a>
+<dt><pre><span class="Keyword">proc</span> <a href="#createButton%2Cstring%2Cfloat%2Cfloat%2Cfloat%2Cfloat%2Cstring%2Ctuple%5Bstring%2Cfloat%2Cfloat%5D%2Ctuple%5Bstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%5D%2CButtonStyle%2Cproc%29"><span class="Identifier">createButton</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">,</span> <span class="Identifier">w</span><span class="Other">,</span> <span class="Identifier">h</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">label</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span>
+                 <span class="Identifier">typeface</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">name</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">,</span> <span class="Identifier">size</span><span class="Other">,</span> <span class="Identifier">weight</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">]</span><span class="Other">;</span> <span class="Identifier">idleColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span>
+    <span class="Identifier">fill</span><span class="Other">,</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#C1EEFA&quot;</span><span class="Other">)</span><span class="Other">;</span> <span class="Identifier">hoverColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">fill</span><span class="Other">,</span> <span class="Identifier">text</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span>
+    <span class="StringLit">&quot;#5A8EA6&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#e5f7fe&quot;</span><span class="Other">)</span><span class="Other">;</span> <span class="Identifier">style</span><span class="Other">:</span> <a href="types.html#ButtonStyle"><span class="Identifier">ButtonStyle</span></a> <span class="Other">=</span> <span class="Identifier">buttonA</span><span class="Other">;</span> <span class="Identifier">action</span><span class="Other">:</span> <span class="Keyword">proc</span> <span class="Other">(</span><span class="Other">)</span> <span class="Other">=</span> <span class="Keyword">nil</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+<p>Creates a button.</p>
+<p><tt class="docutils literal"><span class="pre">id</span></tt> - The ID of the button, used to access its data. Must be unique.</p>
+<p><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> - The X and Y coordinates the button will be placed at.</p>
+<p><tt class="docutils literal"><span class="pre">w</span></tt>, <tt class="docutils literal"><span class="pre">h</span></tt> - The width and height of the button respectively.</p>
+<p><tt class="docutils literal"><span class="pre">label</span></tt> - The text to display on the button.</p>
+<p><tt class="docutils literal"><span class="pre">typeface</span></tt> - Information about the font to use.</p>
+<p><tt class="docutils literal"><span class="pre">idleColors</span></tt>, <tt class="docutils literal"><span class="pre">hoverColors</span></tt> - The colors of each part of the button.</p>
+<p><tt class="docutils literal"><span class="pre">style</span></tt> - The style of the button, <tt class="docutils literal"><span class="pre">buttonA</span></tt>, buttonB`, or <tt class="docutils literal"><span class="pre">buttonC</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">action</span></tt> - A procedure to be executed when the button is clicked.</p>
+
+
+</dd>
+<a id="createToggle,string,float,float,tuple[string,string,string],tuple[string,string,string],ToggleStyle,Orientation"></a>
+<dt><pre><span class="Keyword">proc</span> <a href="#createToggle%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%2Cstring%5D%2CToggleStyle%2COrientation"><span class="Identifier">createToggle</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">initVal</span> <span class="Other">=</span> <span class="Identifier">false</span><span class="Other">;</span> <span class="Identifier">idleColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span>
+    <span class="Identifier">left</span><span class="Other">,</span> <span class="Identifier">handle</span><span class="Other">,</span> <span class="Identifier">right</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#C1EEFA&quot;</span><span class="Other">)</span><span class="Other">;</span> <span class="Identifier">hoverColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span>
+    <span class="Identifier">left</span><span class="Other">,</span> <span class="Identifier">handle</span><span class="Other">,</span> <span class="Identifier">right</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#5A8EA6&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#5A8EA6&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#e5f7fe&quot;</span><span class="Other">)</span><span class="Other">;</span>
+                 <span class="Identifier">style</span><span class="Other">:</span> <a href="types.html#ToggleStyle"><span class="Identifier">ToggleStyle</span></a> <span class="Other">=</span> <span class="Identifier">toggleA</span><span class="Other">;</span> <span class="Identifier">orientation</span><span class="Other">:</span> <a href="types.html#Orientation"><span class="Identifier">Orientation</span></a> <span class="Other">=</span> <span class="Identifier">Horizontal</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+<p>Creates a toggle switch.</p>
+<p><tt class="docutils literal"><span class="pre">id</span></tt> - The ID of the switch, used to access its data. Must be unique.</p>
+<p><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> - The X and Y coordinates the switch will be placed at.</p>
+<p><tt class="docutils literal"><span class="pre">initVal</span></tt> - The state for the switch to start at, either <tt class="docutils literal"><span class="pre">true</span></tt> or <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">idleColors</span></tt>, <tt class="docutils literal"><span class="pre">hoverColors</span></tt> - The colors of each part of the switch. When <tt class="docutils literal"><span class="pre">orientation</span></tt> is <tt class="docutils literal"><span class="pre">Vertical</span></tt>, <tt class="docutils literal"><span class="pre">left</span></tt> and <tt class="docutils literal"><span class="pre">right</span></tt> become the bottom and top respectively.</p>
+<p><tt class="docutils literal"><span class="pre">style</span></tt> - The style of the switch, <tt class="docutils literal"><span class="pre">toggleA</span></tt>, <tt class="docutils literal"><span class="pre">toggleB</span></tt>, or <tt class="docutils literal"><span class="pre">toggleC</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">orientation</span></tt> - The direction of the switch.</p>
+
+
+</dd>
+<a id="createCheckbox,string,float,float,tuple[string,string],tuple[string,string],CheckboxStyle"></a>
+<dt><pre><span class="Keyword">proc</span> <a href="#createCheckbox%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%5D%2CCheckboxStyle"><span class="Identifier">createCheckbox</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">initVal</span> <span class="Other">=</span> <span class="Identifier">false</span><span class="Other">;</span> <span class="Identifier">idleColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span>
+    <span class="Identifier">on</span><span class="Other">,</span> <span class="Identifier">off</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#C1EEFA&quot;</span><span class="Other">)</span><span class="Other">;</span> <span class="Identifier">hoverColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">on</span><span class="Other">,</span> <span class="Identifier">off</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span>
+    <span class="StringLit">&quot;#5A8EA6&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#e5f7fe&quot;</span><span class="Other">)</span><span class="Other">;</span> <span class="Identifier">style</span><span class="Other">:</span> <a href="types.html#CheckboxStyle"><span class="Identifier">CheckboxStyle</span></a> <span class="Other">=</span> <span class="Identifier">checkboxA</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+<p>Creates a checkbox.</p>
+<p><tt class="docutils literal"><span class="pre">id</span></tt> - The ID of the checkbox, used to access its data. Must be unique.</p>
+<p><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> - The X and Y coordinates the checkbox will be placed at.</p>
+<p><tt class="docutils literal"><span class="pre">initVal</span></tt> - The state for the checkbox to start at, either <tt class="docutils literal"><span class="pre">true</span></tt> or <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">idleColors</span></tt>, <tt class="docutils literal"><span class="pre">hoverColors</span></tt> - The colors of each part of the checkbox.</p>
+<p><tt class="docutils literal"><span class="pre">style</span></tt> - The style of the checkbox, either <tt class="docutils literal"><span class="pre">checkboxA</span></tt> or <tt class="docutils literal"><span class="pre">checkboxB</span></tt>.</p>
+
+
+</dd>
+<a id="createRadio,string,string,float,float,tuple[string,string],tuple[string,string]"></a>
+<dt><pre><span class="Keyword">proc</span> <a href="#createRadio%2Cstring%2Cstring%2Cfloat%2Cfloat%2Ctuple%5Bstring%2Cstring%5D%2Ctuple%5Bstring%2Cstring%5D"><span class="Identifier">createRadio</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">,</span> <span class="Identifier">radioGroup</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">initVal</span> <span class="Other">=</span> <span class="Identifier">false</span><span class="Other">;</span>
+                <span class="Identifier">idleColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">on</span><span class="Other">,</span> <span class="Identifier">off</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#C1EEFA&quot;</span><span class="Other">)</span><span class="Other">;</span>
+                <span class="Identifier">hoverColors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span><span class="Identifier">on</span><span class="Other">,</span> <span class="Identifier">off</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#5A8EA6&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#e5f7fe&quot;</span><span class="Other">)</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+<p>Creates a radio button.</p>
+<p><tt class="docutils literal"><span class="pre">id</span></tt> - The ID of the radio, used to access its data. Must be unique.</p>
+<p><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> - The X and Y coordinates the radio will be placed at.</p>
+<p><tt class="docutils literal"><span class="pre">initVal</span></tt> - The state for the radio to start at, either <tt class="docutils literal"><span class="pre">true</span></tt> or <tt class="docutils literal"><span class="pre">false</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">idleColors</span></tt>, <tt class="docutils literal"><span class="pre">hoverColors</span></tt> - The colors of each part of the radio.</p>
+
+
+</dd>
+<a id="createProgress,string,float,float,float,SliderRange,tuple[string,string],ProgressStyle,Orientation"></a>
+<dt><pre><span class="Keyword">proc</span> <a href="#createProgress%2Cstring%2Cfloat%2Cfloat%2Cfloat%2CSliderRange%2Ctuple%5Bstring%2Cstring%5D%2CProgressStyle%2COrientation"><span class="Identifier">createProgress</span></a><span class="Other">(</span><span class="Identifier">id</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">;</span> <span class="Identifier">x</span><span class="Other">,</span> <span class="Identifier">y</span><span class="Other">,</span> <span class="Identifier">size</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">;</span> <span class="Identifier">val</span><span class="Other">:</span> <a href="types.html#SliderRange"><span class="Identifier">SliderRange</span></a><span class="Other">;</span> <span class="Identifier">colors</span><span class="Other">:</span> <span class="Keyword">tuple</span><span class="Other">[</span>
+    <span class="Identifier">left</span><span class="Other">,</span> <span class="Identifier">right</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">]</span> <span class="Other">=</span> <span class="Other">(</span><span class="StringLit">&quot;#46607e&quot;</span><span class="Other">,</span> <span class="StringLit">&quot;#C1EEFA&quot;</span><span class="Other">)</span><span class="Other">;</span> <span class="Identifier">style</span><span class="Other">:</span> <a href="types.html#ProgressStyle"><span class="Identifier">ProgressStyle</span></a> <span class="Other">=</span> <span class="Identifier">progressA</span><span class="Other">;</span>
+                   <span class="Identifier">orientation</span><span class="Other">:</span> <a href="types.html#Orientation"><span class="Identifier">Orientation</span></a> <span class="Other">=</span> <span class="Identifier">Horizontal</span><span class="Other">)</span> <span><span class="Other">{</span><span class="Other pragmadots">...</span><span class="Other">}</span></span><span class="pragmawrap"><span class="Other">{.</span><span class="pragma">
+    <span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">InvalidColor</span><span class="Other">,</span> <span class="Identifier">KeyError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span><span class="Other">.}</span></span></pre></dt>
+<dd>
+
+<p>Creates a progress bar.</p>
+<p><tt class="docutils literal"><span class="pre">id</span></tt> - The ID of the progress bar. Must be unique.</p>
+<p><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> - The X and Y coordinates the progress bar will be placed at.</p>
+<p><tt class="docutils literal"><span class="pre">size</span></tt> - Either the width or height of the progress bar, depending on <tt class="docutils literal"><span class="pre">orientation</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">val</span></tt> - How far along the progress bar should be, from <tt class="docutils literal"><span class="pre">0.0</span></tt> to <tt class="docutils literal"><span class="pre">1.0</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">colors</span></tt> - The colors of each part of the progress bar.</p>
+<p><tt class="docutils literal"><span class="pre">style</span></tt> - The style of the checkbox, <tt class="docutils literal"><span class="pre">progressA</span></tt>, <tt class="docutils literal"><span class="pre">progressB</span></tt>, or <tt class="docutils literal"><span class="pre">progressC</span></tt>.</p>
+<p><tt class="docutils literal"><span class="pre">orientation</span></tt> - The direction of the progress bar.</p>
+
+
+</dd>
+
 </dl></div>
 <div class="section" id="19">
 <h1><a class="toc-backref" href="#19">Exports</a></h1>
 <dl class="item">
-<a href="types.html#Vertical"><span class="Identifier">Vertical</span></a>, <a href="types.html#buttonA"><span class="Identifier">buttonA</span></a>, <a class="reference external" href="types.html">types</a>, <a href="types.html#buttonC"><span class="Identifier">buttonC</span></a>, <a href="mean.html#AnimationLength"><span class="Identifier">AnimationLength</span></a>, <a href="mean.html#createRadio"><span class="Identifier">createRadio</span></a>, <a href="types.html#progressA"><span class="Identifier">progressA</span></a>, <a href="types.html#ToggleStyle"><span class="Identifier">ToggleStyle</span></a>, <a href="types.html#sliderB"><span class="Identifier">sliderB</span></a>, <a href="types.html#Orientation"><span class="Identifier">Orientation</span></a>, <a href="types.html#progressB"><span class="Identifier">progressB</span></a>, <a href="types.html#progressC"><span class="Identifier">progressC</span></a>, <a href="types.html#toggleC"><span class="Identifier">toggleC</span></a>, <a href="mean.html#createProgress"><span class="Identifier">createProgress</span></a>, <a href="types.html#CheckboxStyle"><span class="Identifier">CheckboxStyle</span></a>, <a href="mean.html#createButton"><span class="Identifier">createButton</span></a>, <a href="types.html#buttonB"><span class="Identifier">buttonB</span></a>, <a href="types.html#SliderStyle"><span class="Identifier">SliderStyle</span></a>, <a href="types.html#checkboxB"><span class="Identifier">checkboxB</span></a>, <a href="types.html#toggleB"><span class="Identifier">toggleB</span></a>, <a href="types.html#ProgressStyle"><span class="Identifier">ProgressStyle</span></a>, <a href="mean.html#createToggle"><span class="Identifier">createToggle</span></a>, <a href="mean.html#Radio"><span class="Identifier">Radio</span></a>, <a href="types.html#SliderRange"><span class="Identifier">SliderRange</span></a>, <a href="mean.html#Checkbox"><span class="Identifier">Checkbox</span></a>, <a href="mean.html#Toggle"><span class="Identifier">Toggle</span></a>, <a href="mean.html#createSlider"><span class="Identifier">createSlider</span></a>, <a href="mean.html#Slider"><span class="Identifier">Slider</span></a>, <a href="types.html#ButtonStyle"><span class="Identifier">ButtonStyle</span></a>, <a href="mean.html#Button"><span class="Identifier">Button</span></a>, <a href="mean.html#createCheckbox"><span class="Identifier">createCheckbox</span></a>, <a href="types.html#toggleA"><span class="Identifier">toggleA</span></a>, <a href="types.html#checkboxA"><span class="Identifier">checkboxA</span></a>, <a class="reference external" href="mean.html">mean</a>, <a href="types.html#Horizontal"><span class="Identifier">Horizontal</span></a>, <a href="types.html#sliderA"><span class="Identifier">sliderA</span></a>
+<a href="types.html#Vertical"><span class="Identifier">Vertical</span></a>, <a href="types.html#buttonA"><span class="Identifier">buttonA</span></a>, <a href="types.html#progressC"><span class="Identifier">progressC</span></a>, <a class="reference external" href="types.html">types</a>, <a href="types.html#buttonC"><span class="Identifier">buttonC</span></a>, <a href="types.html#CheckboxStyle"><span class="Identifier">CheckboxStyle</span></a>, <a href="types.html#progressA"><span class="Identifier">progressA</span></a>, <a href="types.html#ToggleStyle"><span class="Identifier">ToggleStyle</span></a>, <a href="types.html#Orientation"><span class="Identifier">Orientation</span></a>, <a href="types.html#sliderB"><span class="Identifier">sliderB</span></a>, <a href="types.html#ButtonStyle"><span class="Identifier">ButtonStyle</span></a>, <a href="types.html#Horizontal"><span class="Identifier">Horizontal</span></a>, <a href="types.html#SliderRange"><span class="Identifier">SliderRange</span></a>, <a href="types.html#toggleC"><span class="Identifier">toggleC</span></a>, <a href="types.html#toggleA"><span class="Identifier">toggleA</span></a>, <a href="types.html#progressB"><span class="Identifier">progressB</span></a>, <a href="types.html#checkboxA"><span class="Identifier">checkboxA</span></a>, <a href="types.html#sliderA"><span class="Identifier">sliderA</span></a>, <a href="types.html#buttonB"><span class="Identifier">buttonB</span></a>, <a href="types.html#SliderStyle"><span class="Identifier">SliderStyle</span></a>, <a href="types.html#checkboxB"><span class="Identifier">checkboxB</span></a>, <a href="types.html#toggleB"><span class="Identifier">toggleB</span></a>, <a href="types.html#ProgressStyle"><span class="Identifier">ProgressStyle</span></a>
 </dl></div>
 
   </div>
@@ -171,7 +380,7 @@ function main() {
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2020-09-03 15:24:10 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2020-09-08 14:28:50 UTC</small>
       </div>
     </div>
   </div>
