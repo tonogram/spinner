@@ -132,7 +132,7 @@ proc createSlider*(
       # keep hovered color while dragging
       Slider[id].hover = Slider[id].drag
       # change color on hover
-      onHover: Slider[id].hover = true
+      onHover: Slider[id].hover = true; mouse.cursorStyle = Pointer
       # enable dragging on click
       onClick: Slider[id].drag = true
       # track valition and mouse button
@@ -279,7 +279,7 @@ proc createButton*(
 
   group "button":
     box x, y, w, h
-    if mouseOverlapLogic(): Button[id].hover = true
+    if mouseOverlapLogic(): Button[id].hover = true; mouse.cursorStyle = Pointer
     else: Button[id].hover = false
     fill ButtonImpl[id].fill[ButtonImpl[id].t]
     case style
@@ -355,7 +355,7 @@ proc createToggle*(
     )
   )
   group "toggle":
-    if mouseOverlapLogic(): Toggle[id].hover = true
+    if mouseOverlapLogic(): Toggle[id].hover = true; mouse.cursorStyle = Pointer
     else: Toggle[id].hover = false
     onClick: Toggle[id].val = not Toggle[id].val
     let cr =
@@ -466,7 +466,7 @@ proc createCheckbox*(
   )
   group "checkbox":
     box x, y, 18, 18
-    if mouseOverlapLogic(): Checkbox[id].hover = true
+    if mouseOverlapLogic(): Checkbox[id].hover = true; mouse.cursorStyle = Pointer
     else: Checkbox[id].hover = false
     onClick: Checkbox[id].val = not Checkbox[id].val
     let cr =
@@ -550,7 +550,7 @@ proc createRadio*(
     RadioGroups[radioGroup].add(id)
   group "Radio":
     box x, y, 18, 18
-    if mouseOverlapLogic(): Radio[id].hover = true
+    if mouseOverlapLogic(): Radio[id].hover = true; mouse.cursorStyle = Pointer
     else: Radio[id].hover = false
 
     for x in RadioGroups[radioGroup]:
