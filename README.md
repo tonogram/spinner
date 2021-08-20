@@ -1,4 +1,4 @@
-![spinner banner](https://knaque.dev/ext/spinner_banner.png)
+![spinner banner](https://possum.page/ext/spinner_banner.png)
 
 [![nimble](https://raw.githubusercontent.com/knaque/nimble-tag-2/master/nimble-tag-2.png)](https://github.com/knaque/nimble-tag-2)
 
