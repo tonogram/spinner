@@ -6,6 +6,11 @@
 [![install test](https://nimble.directory/ci/badges/spinner/nimdevel/status.svg)](https://github.com/Knaque/spinner)
 [![doc build](https://nimble.directory/ci/badges/spinner/nimdevel/docstatus.svg)](https://knaque.dev/spinner)
 
+# This project sucks and you really shouldn't use it.
+Maybe I'll make a better version when Fidget 2 comes out, but don't bet on it.
+
+---
+
 Spinner is a companion library for the wonderful
 [Fidget](https://github.com/treeform/fidget) that makes creating beautiful UIs faster
 without sacrificing customizability. Begone, ugly native components!
